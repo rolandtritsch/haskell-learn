@@ -1,0 +1,20 @@
+language: haskell
+
+notifications:
+  email:
+    recipients:
+      - roland@tritsch.org
+    on_success: always
+    on_failure: always
+
+sudo: required
+
+before_install:
+  - curl -sSL https://get.haskellstack.org/ | sh
+  - stack init
+  - stack build --dry-run
+
+script:
+  - stack test
+  - stack build
+  - stack exec haskell-learn-exe
