@@ -12,4 +12,4 @@ main = do
   printf "Chapter01.doubleMe -> %d\n" (Chapter01.doubleMe 5)
   putStr "Chapter01.findRightTriangle -> "
   putStrLn (show (Chapter01.findRightTriangle 10 24))
-  printf "Chapter02.hello -> %s\n" Chapter02.hello
+  printf "Chapter02.factorial -> %d\n" (Chapter02.factorial 50)

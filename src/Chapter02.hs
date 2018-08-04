@@ -1,5 +1,5 @@
 -- Chapter02.hs
 module Chapter02 where
 
-hello :: String
-hello = ""
+factorial :: Integer -> Integer
+factorial n = product [1..n]
