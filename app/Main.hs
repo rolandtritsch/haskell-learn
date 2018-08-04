@@ -20,4 +20,4 @@ main = do
   printf "Chapter03.initials -> %s\n" (Chapter03.initials "Roland" "Tritsch")
   printf "Chapter03.initials' -> %s\n" (Chapter03.initials' "Roland" "Tritsch")
   printf "Chapter03.initials'' -> %s\n" (Chapter03.initials'' "Roland" "Tritsch")
-  printf "Chapter03.cylinder -> %d\n" (Chapter03.cylinder 2 3)
+  printf "Chapter03.cylinder -> %f\n" (Chapter03.cylinder 2 3)
