@@ -6,6 +6,7 @@ import Chapter00
 import Chapter01
 import Chapter02
 import Chapter03
+import Chapter04
 
 main :: IO ()
 main = do
@@ -21,3 +22,4 @@ main = do
   printf "Chapter03.initials' -> %s\n" (Chapter03.initials' "Roland" "Tritsch")
   printf "Chapter03.initials'' -> %s\n" (Chapter03.initials'' "Roland" "Tritsch")
   printf "Chapter03.cylinder -> %f\n" (Chapter03.cylinder 2 3)
+  printf "Chapter04.qsort' -> %s\n" (show (Chapter04.qsort' [5, 8, 3, 1, 4, 9, 2, 7, 6]))
