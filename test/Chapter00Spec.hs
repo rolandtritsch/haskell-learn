@@ -9,4 +9,4 @@ run :: IO ()
 run = hspec $ do
   describe "Chapter00" $ do
     it "should return the right result(s)" $ do
-      Chapter00.hello `shouldBe` "Hello World"
+      hello `shouldBe` "Hello World"

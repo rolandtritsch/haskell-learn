@@ -9,4 +9,4 @@ run :: IO ()
 run = hspec $ do
   describe "Chapter04" $ do
     it "should return the right result(s)" $ do
-      Chapter04.qsort' [5, 8, 3, 1, 4, 9, 2, 7, 6] `shouldBe` [1..9]
+      qsort' [5, 8, 3, 1, 4, 9, 2, 7, 6] `shouldBe` [1..9]

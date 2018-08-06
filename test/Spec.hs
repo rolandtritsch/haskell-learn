@@ -1,17 +1,19 @@
 -- Spec.hs
 
-import Chapter00Spec
-import Chapter01Spec
-import Chapter02Spec
-import Chapter03Spec
-import Chapter04Spec
-import Chapter05Spec
+import qualified Chapter00Spec as C00S
+import qualified Chapter01Spec as C01S
+import qualified Chapter02Spec as C02S
+import qualified Chapter03Spec as C03S
+import qualified Chapter04Spec as C04S
+import qualified Chapter05Spec as C05S
+import qualified Chapter06Spec as C06S
 
 main :: IO ()
 main = do
-  Chapter00Spec.run
-  Chapter01Spec.run
-  Chapter02Spec.run
-  Chapter03Spec.run
-  Chapter04Spec.run
-  Chapter05Spec.run
+  C00S.run
+  C01S.run
+  C02S.run
+  C03S.run
+  C04S.run
+  C05S.run
+  C06S.run
