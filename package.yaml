@@ -11,16 +11,16 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+# synopsis:              Short description of your package
+# category:              Web
 
-description:         Please see the README on GitHub at <https://github.com/rolandtritsch/haskell-learn#readme>
+description:             Please see the README on GitHub at <https://github.com/rolandtritsch/haskell-learn#readme>
 
 dependencies:
 - base >= 4.7 && < 5
 
 library:
-  source-dirs: src
+  source-dirs:           src
 
 executables:
   haskell-learn-exe:

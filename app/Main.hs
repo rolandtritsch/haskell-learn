@@ -10,6 +10,11 @@ import qualified Chapter04 as C04
 import qualified Chapter05 as C05
 import qualified Chapter06 as C06
 import qualified Chapter06.Caesar as C06C
+import qualified Chapter07 as C07
+import qualified Chapter07.Shape as C07S
+import qualified Chapter07.Person as C07P
+import qualified Chapter07.List as C07L
+import qualified Chapter07.Tree as C07T
 
 main :: IO ()
 main = do
@@ -31,3 +36,13 @@ main = do
   printf "Chapter05.findChains -> %d\n" (C05.findChains (C05.areLongerThan 15) 100)
   printf "Chapter06.distinctLength -> %d\n" (C06.distinctLength [1, 2, 1])
   printf "Chapter06.Caesar.encode -> %s\n" (C06C.encode "roland" C06C.alphabet 10191)
+  printf "Chapter07.Circle.area -> %f\n" (C07S.area (C07S.Circle (C07S.Point 10 20) 10))
+  printf "Chapter07.Rectangle.area -> %f\n" (C07S.area (C07S.Rectangle (C07S.Point 0 0) (C07S.Point 10 10)))
+  printf "Chapter07.Circle.nudge -> %s\n" (show $ C07S.nudge (C07S.Circle (C07S.Point 10 20) 10) (C07S.Offset 10 10))
+  printf "Chapter07.Rectangle.nudge -> %s\n" (show $ C07S.nudge (C07S.Rectangle (C07S.Point 0 0) (C07S.Point 10 10)) (C07S.Offset 10 10))
+  printf "Chapter07.newRoland -> %s\n" (show C07P.newRoland)
+  printf "Chapter07.List.cons -> %s\n" (show  ((1 C07L.:-: C07L.Empty) C07L.^++ (2 C07L.:-: C07L.Empty)))
+  printf "Chapter07.Tree.show -> %s\n" (C07T.showTree (C07T.insertValue 1 C07T.EmptyTree))
+  printf "Chapter07.Tree.show -> %s\n" (C07T.showTree C07T.sampleTree)
+  printf "Chapter07.Tree.show -> %s\n" (show C07T.sampleTree)
+  printf "Chapter07.Tree.show -> %s\n" (show (fmap (*2) C07T.sampleTree))
