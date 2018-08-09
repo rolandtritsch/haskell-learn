@@ -11,6 +11,7 @@ import qualified Chapter07Spec as C07S
 import qualified Chapter10Spec as C10S
 import qualified Chapter11Spec as C11S
 import qualified Chapter12Spec as C12S
+import qualified Chapter13Spec as C13S
 
 main :: IO ()
 main = do
@@ -25,3 +26,4 @@ main = do
   C10S.run
   C11S.run
   C12S.run
+  C13S.run
