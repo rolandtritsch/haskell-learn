@@ -15,6 +15,9 @@ import qualified Chapter07.Shape as C07S
 import qualified Chapter07.Person as C07P
 import qualified Chapter07.List as C07L
 import qualified Chapter07.Tree as C07T
+import qualified Chapter10 as C10
+import qualified Chapter10.RPNCalc as C10R
+import qualified Chapter11 as C11
 
 main :: IO ()
 main = do
@@ -46,3 +49,5 @@ main = do
   printf "Chapter07.Tree.show -> %s\n" (C07T.showTree C07T.sampleTree)
   printf "Chapter07.Tree.show -> %s\n" (show C07T.sampleTree)
   printf "Chapter07.Tree.show -> %s\n" (show (fmap (*2) C07T.sampleTree))
+  printf "Chapter10.RPNCalc.run -> %d\n" (C10R.run (C10R.parse (words "10 4 3 + 2 * -")) [])
+  printf "Chapter11.transform -> %s\n" (show (C11.transform ["roland"]))
