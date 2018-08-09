@@ -49,5 +49,5 @@ main = do
   printf "Chapter07.Tree.show -> %s\n" (C07T.showTree C07T.sampleTree)
   printf "Chapter07.Tree.show -> %s\n" (show C07T.sampleTree)
   printf "Chapter07.Tree.show -> %s\n" (show (fmap (*2) C07T.sampleTree))
-  printf "Chapter10.RPNCalc.run -> %d\n" (C10R.run (C10R.parse (words "10 4 3 + 2 * -")) [])
+  printf "Chapter10.RPNCalc.run -> %f\n" (C10R.run (C10R.parse (words "10 4 3 + 2 * -")) [])
   printf "Chapter11.transform -> %s\n" (show (C11.transform ["roland"]))
