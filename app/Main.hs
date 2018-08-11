@@ -20,6 +20,7 @@ import qualified Chapter10.RPNCalc as C10R
 import qualified Chapter11 as C11
 import qualified Chapter12 as C12
 import qualified Chapter13 as C13
+import qualified Chapter14 as C14
 
 main :: IO ()
 main = do
@@ -54,3 +55,4 @@ main = do
   printf "Chapter10.RPNCalc.run -> %f\n" (C10R.run (C10R.parse (words "10 4 3 + 2 * -")) [])
   printf "Chapter11.transform -> %s\n" (show (C11.transform ["roland"]))
   printf "Chapter13.land -> %s\n" (show (return (0, 0) >>= C13.landRight 2 >>= C13.landLeft 5 >>= C13.landRight 6))
+  printf "Chapter14.canReachIn3 -> %s\n" (show (C14.canReachIn 3 (6, 2) (6, 1)))
